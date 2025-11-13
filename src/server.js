@@ -11,7 +11,7 @@ const PORT = process.env.PORT ;
 const URL_DB = process.env.URL_DB ; 
 const app = express() ; 
 
-app.use(express.static('./public')) ; 
+app.use(express.static('public')) ; 
 app.use(express.urlencoded({extended : false})) ; 
 app.use(express.json()) ; 
 
